@@ -12,6 +12,8 @@ public class BankSolid {
         // Langkah 6: Uji memasukkan Deposito (dewi) ke array BisaDitarik
         // Pesan error: incompatible types: Deposito cannot be converted to BisaDitarik
 
+        // Langkah 7: Uji ganti new EmailNotifikasi() menjadi new SmsNotifikasi(), lalu kembalikan.
+        // Jumlah baris yang perlu diubah: 1 baris (hanya di BankSolid.java, tanpa mengubah ProsesAkhirBulan.java).
         Notifikasi notifikasi = new EmailNotifikasi();
         ProsesAkhirBulan proses = new ProsesAkhirBulan(notifikasi);
         LaporanBank laporan = new LaporanBank();
