@@ -12,7 +12,8 @@ public class BankSolid {
         // Langkah 6: Uji memasukkan Deposito (dewi) ke array BisaDitarik
         // Pesan error: incompatible types: Deposito cannot be converted to BisaDitarik
 
-        ProsesAkhirBulan proses = new ProsesAkhirBulan();
+        Notifikasi notifikasi = new EmailNotifikasi();
+        ProsesAkhirBulan proses = new ProsesAkhirBulan(notifikasi);
         LaporanBank laporan = new LaporanBank();
 
         laporan.cetakDaftar("========== REKENING AWAL ==========", semua);
